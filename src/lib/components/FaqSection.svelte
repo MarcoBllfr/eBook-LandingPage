@@ -2,7 +2,7 @@
  import {Button, FaqItems} from "$components";
  import twittwerIcon from "$assets/icons/twitter.webp";
 </script>
-<section class="faq-section">
+<section class="landing-page-section">
     <h2 class="mb-l">Frequently asked questions</h2>
     <div class="faq-container">
      <FaqItems />
