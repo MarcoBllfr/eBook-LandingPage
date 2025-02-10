@@ -2,6 +2,7 @@
   import bookCover from "$assets/book_cover.png";
   import phoneCover from "$assets/phone_cover.png";
   import { Button } from "$components";
+  let {children} = $props();
 </script>
 
 <section class="hero">
@@ -16,6 +17,9 @@
   </div>
 
   <div class="hero-text white text-center">
+    {#if children}
+    {@render children()}
+    {:else}
     <h1>THIS EBOOK WILL</h1>
     <h1>SAVE YOU MONEY,</h1>
     <h1 class="mb-m">TIME & NERVS</h1>
@@ -26,6 +30,7 @@
         this e-book, to tell you how I did it. No bullshit, no stress.
     </p>
     <Button> Buy from 10$</Button>
+    {/if}
   </div>
 </section>
 
